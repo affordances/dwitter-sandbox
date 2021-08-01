@@ -1,3 +1,6 @@
+// original: https://www.dwitter.net/d/19786
+// where I got the setup code: https://jsfiddle.net/2mt94x5n/
+
 // u(t) is called 60 times per second.
 // t: elapsed time in seconds.
 // c: A 1920x1080 canvas.
