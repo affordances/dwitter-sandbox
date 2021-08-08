@@ -56,9 +56,19 @@ const newDwitter = () => {
     dwitter(elapsedMs / 1000);
   }, 1000 / 60);
 
-  const getX = (i) => i & 7;
+  // i & 7 === i % 8
 
-  const getY = (i) => i >> 3;
+  const getX = (i) => {
+    // console.log("getX i", i);
+    return i % 8;
+  };
+
+  // i >> 3 === Math.floor(i / 8)
+
+  const getY = (i) => {
+    // console.log("getY i", i);
+    return Math.floor(i / 8);
+  };
 
   const fcn = (m, t, i) =>
     ctx.fillRect(
